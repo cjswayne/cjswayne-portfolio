@@ -1,89 +1,82 @@
-header, footer{
-    background-color:#CCE4FF;
+header,
+footer {
+    background-color: #CCE4FF;
 }
 
-/* HEADER STYLES  */
-.top-bar{
-    color:white;
-}
 
-.top-bar a {
-    margin-right:20px;
-}
-
-.top-bar img{
-    /* margin-top:20px; */
-    padding-bottom:20px;
-}
-
-/* /* MAIN SECTION STYLES * */
-
+/*  MAIN SECTION STYLES  */
 
 /* About Me */
-.about-me-padding{
-    padding:0px 3% 20px;
-}
-.about-me-image{
-border-radius: 5px;
+.about-me-padding {
+    padding: 0px 3% 20px;
 }
 
-
-
-.skill-text h4, .skill-text h3{
-    margin-bottom:0;
+.about-me-image {
+    border-radius: 5px;
 }
 
-.skill-text img{
+.skill-text h4,
+.skill-text h3 {
+    margin-bottom: 0;
+}
+
+.skill-text img {
     max-width: 200px;
 }
 
 /* My Work */
-.project-card{
+.project-card {
     position: relative;
-    margin:10px;
-    border:4px solid #1A8BFF;
+    margin: 10px;
+    border: 4px solid #1A8BFF;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.project-card img{
+.project-card img {
     object-fit: cover;
     max-width: 100%;
     z-index: -2;
     position: relative;
 }
 
-.project-card:hover .image-wrap{
+.project-card:hover .image-wrap {
     filter: blur(0px);
     transition: 0.3s;
     transform: scale(1.1);
 }
 
-.project-card:hover .project-card-text{
+.project-card:hover .project-card-text {
     filter: blur(0.05px);
     transition: 0.3s;
     transform: scale(0.9);
     opacity: 0.8;
 }
-.project-card-text p, .project-card-text a{
-    margin:5px 0px 10px;
+
+.project-card-text p,
+.project-card-text a {
+    margin: 5px 0px 10px;
 }
-.project-card-text p{
-    opacity:0.8;
-    font-size:.7em;
+
+.project-card-text p {
+    opacity: 0.8;
+    font-size: .7em;
 }
-.project-card-text h2, .project-card-text h3{
-    margin:5px 0px;
-    border-bottom:2px solid #333;
-    padding-bottom:5px;
+
+.project-card-text h2,
+.project-card-text h3 {
+    margin: 5px 0px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
 }
-.project-card-text{
+
+.project-card-text {
     max-width: fit-content;
-    position:absolute;
+    position: absolute;
     bottom: 10%;
     left: 5%;
     background-color: #24ADFF;
-    padding-top:10px;
+    padding-top: 10px;
     min-width: 250px;
     border-radius: 5px;
     filter: blur(0px);
@@ -91,14 +84,16 @@ border-radius: 5px;
     transform: scale(1);
     opacity: 1;
 }
-.image-wrap{
+
+.image-wrap {
     position: relative;
     display: inline-block;
-    filter:blur(2px);
+    filter: blur(2px);
     transition: 0.3s;
     transform: scale(1);
 
 }
+
 .image-wrap::before {
     content: "";
     position: absolute;
@@ -108,57 +103,47 @@ border-radius: 5px;
     height: 100%;
     background-color: #CCE4FF;
     opacity: 0.5;
-    
-    z-index: -1; /* Adjust the z-index to control stacking order */
+
+    z-index: -1;
+    /* Adjust the z-index to control stacking order */
 }
 
 /* FOOTER STYLES */
-.my-name{
-    font-size:.8em;
-    color:#AAA;
+.my-name {
+    font-size: .8em;
+    color: #AAA;
 }
 
-
-
-
-
-@media(max-width:798px){
-    .about-me-image{
-        width:100%;
-    }
-    .about-me-padding .half-width{
-        width:100%;
+@media(max-width:798px) {
+    .about-me-image {
+        width: 100%;
     }
 
-    .order-mobile{
+    .about-me-padding .half-width {
+        width: 100%;
+    }
+
+    .order-mobile {
         flex-direction: column-reverse;
     }
-    .padding-left-mobile{
-        padding-left:20px;
 
-        padding-right:0px;
+    #about-me,
+    #contact-me {
+        margin-bottom: 0;
     }
-#about-me, #contact-me{
-    margin-bottom:0;
-}
-.contact-me-mobile .row{
-    flex-direction: row;
-    margin-bottom:20px;
-}
 
-.align-end-mobile{
-    align-items: end;
-}
+    .contact-me-mobile .row {
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
 
-.top-bar h1, .top-bar img{
-    padding:0;
-}
-.top-bar{
-    padding-bottom:15px;
-}
-.align-left-mobile, header{
-    align-items: start;
-}
+    .top-bar h1,
+    .top-bar img {
+        padding: 0;
+    }
 
+    .top-bar {
+        padding-bottom: 15px;
+    }
 
 }
