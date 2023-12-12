@@ -7,14 +7,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charles Swayne | Portfolio j</title>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
 
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body>
-    <header class="container-padding top-bar has-padding-top">
-        <div class="flex row align-center">
+    <header class="container-padding top-bar flex row align-center justify-between align-left-mobile">
+        <div class="flex row align-center align-left-mobile">
             <img width="100px" height="100px" src="./assets/images/linkedin-square.png" alt="" />
             <h1 class="has-padding-left">Charles Swayne</h1>
         </div>
@@ -25,47 +25,38 @@
         </nav>
     </header>
     <main class="container-padding flex column">
-        <section class="section-container about-me-box flex row">
-            <h2 id="about-me" class="section-header has-padding">About Me</h2>
-            <div class="right-box has-padding">
-                <div class="flex row align-center has-padding-top">
+        <section class="flex row">
+            <h2 id="about-me" class="text-nowrap has-padding">About Me</h2>
+            <div class=" has-padding has-margin-top ">
+                <h3>Who Am I?</h3>
+                <div class="flex row align-center has-padding-bottom about-me-padding">
 
-                    <div class="flex column has-padding-right">
-                        <h3>Who Am I?</h3>
-
+                    <img class="half-width about-me-image" src="./assets/images/myself-square.jpg" alt="">
+                    <div class="flex column has-padding-left half-width">
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
-                            odit sunt possimus nisi hic doloremque recusandae consectetur quasi
-                            voluptatum! Beatae soluta ex labore praesentium in facilis aut,
-                            sequi accusamus incidunt.
+                            I've always found web design fascinating, which inspired me to pursue a career in frontend development. My approach to problem-solving is straightforward yet effective: start, experiment, and iterate. This method has served me well, particularly in my recent project, 'Animal Blog Navigation' on reptichip.com. This project was a culmination of all the web development skills I've acquired so far, and I'm really proud of the outcome. Looking ahead, my goal is to expand my expertise and become a full-stack developer, blending front-end creativity with back-end functionality.
                         </p>
 
                     </div>
-                    <img width="400px" style="border-radius:5px;" src="./assets/images/myself-square.jpg" alt="">
+                    
                 </div>
                 <h3>My Skills</h3>
-                <div class="flex column skill-text">
+                <div class="flex column skill-text about-me-padding">
                     <div class="flex row align-center">
                         <img src="./assets/images/e-commerce-icon.png" alt="">
                         <div class="flex column has-padding-left">
                             <h4>E-Commerce</h4>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
-                                odit sunt possimus nisi hic doloremque recusandae consectetur quasi
-                                voluptatum! Beatae soluta ex labore praesentium in facilis aut,
-                                sequi accusamus incidunt.
+                                In the realm of e-commerce, I bring a comprehensive understanding of web design principles that are pivotal in enhancing online store conversion rates. Leveraging this knowledge, I focus on creating user-friendly interfaces that not only attract customers but also provide them with an effortless shopping experience, ultimately driving sales.
                             </p>
                         </div>
                     </div>
-                    <div class="flex row align-center">
+                    <div class="flex row align-center order-mobile">
 
-                        <div class="flex column has-padding-right">
+                        <div class="flex column has-padding-right padding-left-mobile">
                             <h4>Team Management</h4>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
-                                odit sunt possimus nisi hic doloremque recusandae consectetur quasi
-                                voluptatum! Beatae soluta ex labore praesentium in facilis aut,
-                                sequi accusamus incidunt.
+                                Drawing from my previous experience in upper-level management in the restaurant industry, I've honed my skills in team management and collaboration. Working with a diverse group of people across various backgrounds and ages has enriched my ability to lead and be an integral part of a team. This experience has been invaluable in my web development career, especially when working on collaborative projects.
                             </p>
                         </div>
                         <img src="./assets/images/team-management-icon.png" alt="">
@@ -75,20 +66,18 @@
                         <div class="flex column has-padding-left">
                             <h4>Web Development</h4>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
-                                odit sunt possimus nisi hic doloremque recusandae consectetur quasi
-                                voluptatum! Beatae soluta ex labore praesentium in facilis aut,
-                                sequi accusamus incidunt.
+                                As a web developer, I am constantly immersed in coding, designing, and optimizing websites. My journey so far has been marked by a relentless pursuit of learning and applying new technologies and methodologies. I thrive in environments where I can bring ideas to life through code, create visually appealing designs, and ensure a seamless user experience. My commitment is to deliver not just functional, but also engaging and intuitive web solutions.
                             </p>
                         </div>
                     </div>
                 </div>
         </section>
-        <section class="section-container flex row">
-            <h2 id="my-work" class="section-header has-padding">My Work</h2>
+        <section class="flex row">
+            <h2 id="my-work" class="text-nowrap has-padding">My Work</h2>
 
             <div class="flex row wrap project">
                 <div class="project-card whole-width">
+                    <a href="https://reptichip.com/blogs/animals">
                     <div class="image-wrap">
                         <img src="./assets/images/reptichip.com_blogs_animals_tagged_tortoises_level=2&parent=reptiles&handle=tortoises.jpg"
                             alt="">
@@ -98,8 +87,10 @@
                         <a href="https://reptichip.com/blogs/animals">reptichip.com</a>
                         <p>html - css - javascript - liquid</p>
                     </div>
+                </a>
                 </div>
                 <div class="project-card half-width">
+                    <a href="https://fitmyfoot.com/">
                     <div class="image-wrap">
                         <img src="./assets/images/fitmyfoot.com_.jpg" alt="">
                     </div>
@@ -108,8 +99,10 @@
                         <a href="https://fitmyfoot.com/">fitmyfoot.com</a>
                         <p>html - css - javascript - liquid</p>
                     </div>
+                    </a>
                 </div>
                 <div class="project-card half-width">
+                    <a href="https://www.getmytransfers.com/cart">
                     <div class="image-wrap">
                         <img src="./assets/images/www.getmytransfers.com_cart.png" alt="">
                     </div>
@@ -118,8 +111,10 @@
                         <a href="https://www.getmytransfers.com/cart">getmytransfers.com</a>
                         <p>html - css - javascript - liquid</p>
                     </div>
+                    </a>
                 </div>
                 <div class="project-card half-width">
+                    <a href="https://reptichip.com/cart">
                     <div class="image-wrap">
                         <img src="./assets/images/reptichip.com_cart.png" alt="">
                     </div>
@@ -128,8 +123,10 @@
                         <a href="https://reptichip.com/cart">reptichip.com</a>
                         <p>html - css - javascript - liquid</p>
                     </div>
+                    </a>
                 </div>
                 <div class="project-card half-width">
+                    <a href="https://assaholicsanonymous.org/pages/welcome-tiktok">
                     <div class="image-wrap">
                         <img src="./assets/images/assaholicsanonymous.org_pages_welcome-tiktok.jpg" alt="">
                     </div>
@@ -138,20 +135,21 @@
                         <a href="https://assaholicsanonymous.org/pages/welcome-tiktok">assaholicsanonymous.org</a>
                         <p>html - css - javascript - liquid</p>
                     </div>
+                    </a>
                 </div>
             </div>
 
         </section>
-        <section class="section-container flex row">
-            <h2 id="contact-me" class="section-header has-padding">Contact Me</h2>
-            <div class="flex row align-center right-box has-padding-top whole-width justify-around">
+        <section class=" flex row contact-me-mobile">
+            <h2 id="contact-me" class="text-nowrap has-padding">Contact Me</h2>
+            <div class="flex row align-center  has-padding-top whole-width justify-around">
                 <a href="mailto:cjswayne@gmail.com">cjswayne@gmail.com</a>
                 <a href="https://github.com/cjswayne">Github</a>
             </div>
         </section>
     </main>
-    <footer class="container-padding flex align-center row">
-        <p class="my-name"><a>Charles Swayne 12/11/2023</a></p>
+    <footer class="container-padding flex align-center row justify-end align-end-mobile">
+        <p class="my-name"><a href="https://github.com/cjswayne">Charles Swayne 12/11/2023</a></p>
     </footer>
     <script src="./assets/js/javascript.js"></script>
 </body>
