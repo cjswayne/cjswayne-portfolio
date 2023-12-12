@@ -1,33 +1,159 @@
+<!-- Taking inspo from: https://www.ybrikman.com/ -->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charles Swayne | Portfolio j</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Charles Swayne</h1>
-      <img src="./assets/images/headshot-square-circle-cut.jpg" alt="" />
-      <nav>
-        <a href="">About Me</a>
-        <a href="">My Work</a>
-        <a href="">Contact Me</a>
-      </nav>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+</head>
+
+<body>
+    <header class="container-padding top-bar has-padding-top">
+        <div class="flex row align-center">
+            <img width="100px" height="100px" src="./assets/images/linkedin-square.png" alt="" />
+            <h1 class="has-padding-left">Charles Swayne</h1>
+        </div>
+        <nav>
+            <a href="/#about-me">About Me</a>
+            <a href="/#my-work">My Work</a>
+            <a href="/#contact-me">Contact Me</a>
+        </nav>
     </header>
-    <main>
-      <section class="section-container">
-        <h2 id="about-me" class="section-header">About Me</h2>
-      </section>
-      <section class="section-container">
-        <h2 id="my-work" class="section-header">My Work</h2>
-      </section>
-      <section class="section-container">
-        <h2 id="contact-me" class="section-header">Contact Me</h2>
-      </section>
+    <main class="container-padding flex column">
+        <section class="section-container about-me-box flex row">
+            <h2 id="about-me" class="section-header has-padding">About Me</h2>
+            <div class="right-box has-padding">
+                <div class="flex row align-center has-padding-top">
+
+                    <div class="flex column has-padding-right">
+                        <h3>Who Am I?</h3>
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
+                            odit sunt possimus nisi hic doloremque recusandae consectetur quasi
+                            voluptatum! Beatae soluta ex labore praesentium in facilis aut,
+                            sequi accusamus incidunt.
+                        </p>
+
+                    </div>
+                    <img width="400px" style="border-radius:5px;" src="./assets/images/myself-square.jpg" alt="">
+                </div>
+                <h3>My Skills</h3>
+                <div class="flex column skill-text">
+                    <div class="flex row align-center">
+                        <img src="./assets/images/e-commerce-icon.png" alt="">
+                        <div class="flex column has-padding-left">
+                            <h4>E-Commerce</h4>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
+                                odit sunt possimus nisi hic doloremque recusandae consectetur quasi
+                                voluptatum! Beatae soluta ex labore praesentium in facilis aut,
+                                sequi accusamus incidunt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex row align-center">
+
+                        <div class="flex column has-padding-right">
+                            <h4>Team Management</h4>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
+                                odit sunt possimus nisi hic doloremque recusandae consectetur quasi
+                                voluptatum! Beatae soluta ex labore praesentium in facilis aut,
+                                sequi accusamus incidunt.
+                            </p>
+                        </div>
+                        <img src="./assets/images/team-management-icon.png" alt="">
+                    </div>
+                    <div class="flex row align-center">
+                        <img src="./assets/images/web-dev-icon.png" alt="">
+                        <div class="flex column has-padding-left">
+                            <h4>Web Development</h4>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
+                                odit sunt possimus nisi hic doloremque recusandae consectetur quasi
+                                voluptatum! Beatae soluta ex labore praesentium in facilis aut,
+                                sequi accusamus incidunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="section-container flex row">
+            <h2 id="my-work" class="section-header has-padding">My Work</h2>
+
+            <div class="flex row wrap project">
+                <div class="project-card whole-width">
+                    <div class="image-wrap">
+                        <img src="./assets/images/reptichip.com_blogs_animals_tagged_tortoises_level=2&parent=reptiles&handle=tortoises.jpg"
+                            alt="">
+                    </div>
+                    <div class="project-card-text has-padding-left has-padding-right">
+                        <h2>Animal Blog Navigation</h2>
+                        <a href="https://reptichip.com/blogs/animals">reptichip.com</a>
+                        <p>html - css - javascript - liquid</p>
+                    </div>
+                </div>
+                <div class="project-card half-width">
+                    <div class="image-wrap">
+                        <img src="./assets/images/fitmyfoot.com_.jpg" alt="">
+                    </div>
+                    <div class="project-card-text has-padding-left has-padding-right">
+                        <h3>Homepage Section</h3>
+                        <a href="https://fitmyfoot.com/">fitmyfoot.com</a>
+                        <p>html - css - javascript - liquid</p>
+                    </div>
+                </div>
+                <div class="project-card half-width">
+                    <div class="image-wrap">
+                        <img src="./assets/images/www.getmytransfers.com_cart.png" alt="">
+                    </div>
+                    <div class="project-card-text has-padding-left has-padding-right">
+                        <h3>Variable Rush Fee</h3>
+                        <a href="https://www.getmytransfers.com/cart">getmytransfers.com</a>
+                        <p>html - css - javascript - liquid</p>
+                    </div>
+                </div>
+                <div class="project-card half-width">
+                    <div class="image-wrap">
+                        <img src="./assets/images/reptichip.com_cart.png" alt="">
+                    </div>
+                    <div class="project-card-text has-padding-left has-padding-right">
+                        <h3>Cross Sell Section</h3>
+                        <a href="https://reptichip.com/cart">reptichip.com</a>
+                        <p>html - css - javascript - liquid</p>
+                    </div>
+                </div>
+                <div class="project-card half-width">
+                    <div class="image-wrap">
+                        <img src="./assets/images/assaholicsanonymous.org_pages_welcome-tiktok.jpg" alt="">
+                    </div>
+                    <div class="project-card-text has-padding-left has-padding-right">
+                        <h3>Tiktok Landing Page</h3>
+                        <a href="https://assaholicsanonymous.org/pages/welcome-tiktok">assaholicsanonymous.org</a>
+                        <p>html - css - javascript - liquid</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="section-container flex row">
+            <h2 id="contact-me" class="section-header has-padding">Contact Me</h2>
+            <div class="flex row align-center right-box has-padding-top whole-width justify-around">
+                <a href="mailto:cjswayne@gmail.com">cjswayne@gmail.com</a>
+                <a href="https://github.com/cjswayne">Github</a>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="container-padding flex align-center row">
+        <p class="my-name"><a>Charles Swayne 12/11/2023</a></p>
+    </footer>
     <script src="./assets/js/javascript.js"></script>
-  </body>
+</body>
+
 </html>
