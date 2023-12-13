@@ -1,6 +1,82 @@
-header,
-footer {
-    background-color: #CCE4FF;
+/* GENERAL STYLES */
+.row {
+    flex-direction: row;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.container-padding {
+    padding: 5px 15%;
+}
+
+.has-padding {
+    padding: 20px;
+}
+
+.has-padding-left {
+    padding-left: 20px;
+}
+
+.has-padding-right {
+    padding-right: 20px;
+}
+
+.has-padding-bottom {
+    padding-bottom: 20px;
+}
+
+.has-padding-top {
+    padding-top: 20px;
+}
+
+.has-margin-top {
+    margin-top: 20px;
+}
+
+.has-margin-right{
+    margin-right:20px;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.half-width {
+    width: calc(50% - 28px);
+}
+
+.whole-width {
+    width: 100%;
+}
+
+.text-nowrap {
+    text-wrap: nowrap;
 }
 
 
@@ -105,7 +181,6 @@ footer {
     opacity: 0.5;
 
     z-index: -1;
-    /* Adjust the z-index to control stacking order */
 }
 
 /* FOOTER STYLES */
@@ -146,4 +221,46 @@ footer {
         padding-bottom: 15px;
     }
 
+}
+
+/* MEDIA QUERIES   */
+
+@media (max-width: 1200px) {
+    .container-padding {
+        padding: 5px 5%;
+    }
+}
+
+@media (max-width: 798px) {
+    .row,
+    header {
+        flex-direction: column;
+    }
+
+    .has-margin-top {
+        margin: 0;
+    }
+
+    .has-padding {
+        padding-bottom: 0px;
+    }
+
+    .project .half-width,
+    .project .whole-width {
+        width: 92%;
+    }
+
+    .align-left-mobile {
+        align-items: start;
+    }
+
+    .align-end-mobile {
+        align-items: end;
+    }
+
+    .padding-left-mobile {
+        padding-left: 20px;
+
+        padding-right: 0px;
+    }
 }
